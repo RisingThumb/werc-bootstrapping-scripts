@@ -134,12 +134,12 @@ cd /var/www/werc/etc/users/
 mkdir $SITE_USERNAME
 echo $SITE_PASSWORD > $SITE_USERNAME/password
 
-cat > /var/www/werc/sites/$DOMAIN_NAME/_werc/ <<EOF
+cat > /var/www/werc/sites/$DOMAIN_NAME/_werc/config <<EOF
 siteTitle=$DOMAIN_NAME
 conf_enable_wiki $SITE_USERNAME
 EOF
 
-cat > /var/www/werc/sites/$DOMAIN_NAME/apps/goralog/_werc/ <<EOF
+cat > /var/www/werc/sites/$DOMAIN_NAME/apps/goralog/_werc/config <<EOF
 conf_enable_goralog
 conf_blog_editors=$SITE_USERNAME
 conf_blog_title=$DOMAIN_NAME
