@@ -37,6 +37,6 @@ git clone "https://github.com/RisingThumb/werc.git"
 
 ## Install any additional werc apps
 ### Make everything owned by www-data. If this isn't done, we might run into permission issues
-#chown -R www-data /var/www/werc
+chown -R www-data /var/www/werc
 
 echo "Werc successfully installed!\nYou will find it located in /var/www/werc\nFurther steps you may need to do...\n  1. In your Domain Registrar create an A/AAAA record that points $DOMAIN_NAME to the right IP Address\nHappy wercing!"
